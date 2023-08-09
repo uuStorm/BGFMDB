@@ -99,7 +99,7 @@ ss.dependency 'FMDB'
 end
 
 s.subspec 'BG' do |ss|
-ss.dependency 'FMDB'
+ss.source_files = 'BGFMDB/libs/BG/*.{h,m}'
 end
 
 #s.source_files  = 'BGFMDB/libs/BG/*.{h,m}', 'BGFMDB/libs/FMDB/*.{h,m}'
