@@ -95,12 +95,11 @@ s.public_header_files = 'BGFMDB/libs/BG/BGFMDB.h'
 s.source_files = 'BGFMDB/libs/BG/BGFMDB.h'
 
 s.subspec 'FMDB' do |ss|
-ss.source_files = 'BGFMDB/libs/FMDB/*.{h,m}'
+ss.dependency 'FMDB'
 end
 
 s.subspec 'BG' do |ss|
-ss.source_files = 'BGFMDB/libs/BG/*.{h,m}'
-ss.dependency 'BGFMDB/FMDB'
+ss.dependency 'FMDB'
 end
 
 #s.source_files  = 'BGFMDB/libs/BG/*.{h,m}', 'BGFMDB/libs/FMDB/*.{h,m}'
